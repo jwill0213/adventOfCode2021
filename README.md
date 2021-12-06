@@ -9,7 +9,7 @@ Solutions for [Advent of Code 2021](https://adventofcode.com/2021/)
 
 **Day 4**  - [Part 1](Day_4/Part_1/) - [Part 2](Day_4/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/4)
 
-**Day 5**  <!-- - [Part 1](Day_5/Part_1/) - [Part 2](Day_5/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/5) -->
+**Day 5**  - [Part 1](Day_5/Part_1/) - [Part 2](Day_5/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/5)
 
 **Day 6**  <!-- - [Part 1](Day_6/Part_1/) - [Part 2](Day_6/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/6) -->
 
