@@ -1,5 +1,7 @@
 # Advent Of Code 2021 Day 1: Sonar Sweep Part 2
 
+[Part 1](../Part_1/)
+
 Considering every single measurement isn't as useful as you expected: there's just too much noise in the data.
 
 Instead, consider sums of a three-measurement sliding window. Again considering the above example:
