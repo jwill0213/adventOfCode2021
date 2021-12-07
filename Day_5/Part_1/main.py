@@ -31,7 +31,6 @@ def main():
                     currY = y1
 
                 locKey = (currX, currY)
-                # print(locKey)
                 if locKey in ventMap:
                     ventMap[locKey] += 1
                 else:
