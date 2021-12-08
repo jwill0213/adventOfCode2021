@@ -1,5 +1,6 @@
 # Advent Of Code 2021
-Solutions for [Advent of Code 2021](https://adventofcode.com/2021/)
+
+There are my solutions for [Advent of Code 2021](https://adventofcode.com/2021/). I have implemented them all in Python 3.10. In this repo I have all the questions and inputs included in the folder for each day as well as my solutions for each day.
 
 **Day 1**  - [Part 1](Day_1/Part_1/) - [Part 2](Day_1/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/1)
 
@@ -15,7 +16,7 @@ Solutions for [Advent of Code 2021](https://adventofcode.com/2021/)
 
 **Day 7**  - [Part 1](Day_7/Part_1/) - [Part 2](Day_7/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/7)
 
-**Day 8**  <!-- - [Part 1](Day_8/Part_1/) - [Part 2](Day_8/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/8) -->
+**Day 8**  - [Part 1](Day_8/Part_1/) - [Part 2](Day_8/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/8)
 
 **Day 9**  <!-- - [Part 1](Day_9/Part_1/) - [Part 2](Day_9/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/9) -->
 
