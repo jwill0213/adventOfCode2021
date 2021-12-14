@@ -18,11 +18,11 @@ There are my solutions for [Advent of Code 2021](https://adventofcode.com/2021/)
 
 **Day 8**  - [Part 1](Day_8/Part_1/) - [Part 2](Day_8/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/8)
 
-**Day 9**  <!-- - [Part 1](Day_9/Part_1/) - [Part 2](Day_9/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/9) -->
+**Day 9**  - [Part 1](Day_9/Part_1/) - [Part 2](Day_9/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/9)
 
-**Day 10**  <!-- - [Part 1](Day_10/Part_1/) - [Part 2](Day_10/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/10) -->
+**Day 10**  - [Part 1](Day_10/Part_1/) - [Part 2](Day_10/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/10)
 
-**Day 11**  <!-- - [Part 1](Day_11/Part_1/) - [Part 2](Day_11/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/11) -->
+**Day 11**  - [Part 1](Day_11/Part_1/) - [Part 2](Day_11/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/11)
 
 **Day 12**  <!-- - [Part 1](Day_12/Part_1/) - [Part 2](Day_12/Part_2/) - [AdventOfCode](https://adventofcode.com/2021/day/12) -->
 
