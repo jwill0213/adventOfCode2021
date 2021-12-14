@@ -1,5 +1,13 @@
+#!/bin/bash
+
 DAY=$1
 TITLE=$2
+
+TEN=10
+
+if [ $DAY -lt 10 ]; then
+    DAY="0${DAY}"
+fi
 
 mkdir ../Day_$DAY/
 
