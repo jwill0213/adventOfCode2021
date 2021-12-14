@@ -8,9 +8,10 @@ def main():
     numFlashes = 0
 
     allFlashed = False
-    step = 1
+    step = 0
     while not allFlashed:
         flashesThisStep = 0
+        step += 1
         # Incerement enegery of all indexes by 1
         for y in range(len(octopuses)):
             for x in range(len(octopuses[0])):
@@ -27,11 +28,11 @@ def main():
                         flashesThisStep += 1
                         incrementList = findSurroundingPoints(
                             (x, y), maxIndex)
+                        flashLoop = True
                         for point in incrementList:
                             x, y = point
                             if octopuses[y][x] != '*':
                                 octopuses[y][x] += 1
-                                flashLoop = True
 
         # Set all flashed octopuses, *,  to 0
         for y in range(len(octopuses)):
@@ -45,7 +46,6 @@ def main():
             print("All Octopuses flashed at step", step)
         else:
             numFlashes += flashesThisStep
-        step += 1
 
 
 def findSurroundingPoints(currPoint, maxIndex):
