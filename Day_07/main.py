@@ -1,7 +1,4 @@
-def part1():
-    with open('input.txt') as f:
-        lines = [line.rstrip() for line in f.readlines()]
-
+def part1(lines):
     crabList = [int(f) for f in lines[0].split(',')]
     crabList.sort()
 
@@ -15,10 +12,7 @@ def part1():
     print(f"Minimum Fuel: {minimumFuel}")
 
 
-def part2():
-    with open('input.txt') as f:
-        lines = [line.rstrip() for line in f.readlines()]
-
+def part2(lines):
     crabList = [int(f) for f in lines[0].split(',')]
     crabList.sort()
 
@@ -35,7 +29,10 @@ def part2():
 
 
 if __name__ == "__main__":
+    with open('input.txt') as f:
+        lines = [line.rstrip() for line in f.readlines()]
+
     print("\n----- Part 1 -----\n")
-    part1()
+    part1(lines)
     print("\n----- Part 2 -----\n")
-    part2()
+    part2(lines)

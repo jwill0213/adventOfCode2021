@@ -1,7 +1,4 @@
-def part1():
-    with open('input.txt') as f:
-        lines = [line.rstrip() for line in f.readlines()]
-
+def part1(lines):
     ventMap = {}
     for line in lines:
         coords = line.split(' -> ')
@@ -39,10 +36,7 @@ def part1():
     print(f"Vent Overlaps: {len([k for k,v in ventMap.items() if v >= 2])}")
 
 
-def part2():
-    with open('input.txt') as f:
-        lines = [line.rstrip() for line in f.readlines()]
-
+def part2(lines):
     ventMap = {}
     for line in lines:
         coords = line.split(' -> ')
@@ -76,7 +70,10 @@ def part2():
 
 
 if __name__ == "__main__":
+    with open('input.txt') as f:
+        lines = [line.rstrip() for line in f.readlines()]
+
     print("\n----- Part 1 -----\n")
-    part1()
+    part1(lines)
     print("\n----- Part 2 -----\n")
-    part2()
+    part2(lines)

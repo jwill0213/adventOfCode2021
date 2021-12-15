@@ -1,11 +1,9 @@
 import re
 
 
-def part1():
+def part1(lines):
     # 0 is moves, 1 is empty line, 2 is start of first board
     boardsStart = 2
-    with open('input.txt') as f:
-        lines = [line.rstrip() for line in f.readlines()]
 
     bingoNums = lines[0].split(',')
 
@@ -34,11 +32,9 @@ def part1():
         f"Winner found!\nBoard Sum:{winningSum}\nNumber: {winningNumber}\nFinal Score: {winningSum * winningNumber}")
 
 
-def part2():
+def part2(lines):
     # 0 is moves, 1 is empty line, 2 is start of first board
     boardsStart = 2
-    with open('input.txt') as f:
-        lines = [line.rstrip() for line in f.readlines()]
 
     bingoNums = lines[0].split(',')
 
@@ -106,7 +102,10 @@ def findWinningSum(board):
 
 
 if __name__ == "__main__":
+    with open('input.txt') as f:
+        lines = [line.rstrip() for line in f.readlines()]
+
     print("\n----- Part 1 -----\n")
-    part1()
+    part1(lines)
     print("\n----- Part 2 -----\n")
-    part2()
+    part2(lines)

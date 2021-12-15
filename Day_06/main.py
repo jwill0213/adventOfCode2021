@@ -2,10 +2,7 @@ SPAWN_RATE = 6  # includes 0
 INITIAL_DELAY = 2
 
 
-def part1(days):
-    with open('input.txt') as f:
-        lines = [line.rstrip() for line in f.readlines()]
-
+def part1(lines, days):
     fishList = [int(f) for f in lines[0].split(',')]
 
     for _ in range(days):
@@ -23,10 +20,7 @@ def part1(days):
     print(f"Total fish {len(fishList)}")
 
 
-def part2(days):
-    with open('input.txt') as f:
-        lines = [line.rstrip() for line in f.readlines()]
-
+def part2(lines, days):
     fishList = [int(f) for f in lines[0].split(',')]
     fishDict = {}
 
@@ -62,7 +56,10 @@ def part2(days):
 
 
 if __name__ == "__main__":
+    with open('input.txt') as f:
+        lines = [line.rstrip() for line in f.readlines()]
+
     print("\n----- Part 1 -----\n")
-    part1(80)
+    part1(lines, 80)
     print("\n----- Part 2 -----\n")
-    part2(256)
+    part2(lines, 256)

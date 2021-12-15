@@ -1,9 +1,7 @@
-def part1():
+def part1(lines):
     STEPS_TO_RUN = 100
 
-    with open('input.txt') as f:
-        octopuses = [[int(num) for num in line.rstrip()]
-                     for line in f.readlines()]
+    octopuses = [[int(num) for num in line] for line in lines]
 
     maxIndex = (len(octopuses[0]) - 1, len(octopuses) - 1)
     numFlashes = 0
@@ -38,13 +36,11 @@ def part1():
                     octopuses[y][x] = 0
 
         if step+1 == 100:
-            print("Flashes at step 100", numFlashes)
+            print("Flashes at step 100:", numFlashes)
 
 
-def part2():
-    with open('input.txt') as f:
-        octopuses = [[int(num) for num in line.rstrip()]
-                     for line in f.readlines()]
+def part2(lines):
+    octopuses = [[int(num) for num in line] for line in lines]
 
     maxIndex = (len(octopuses[0]) - 1, len(octopuses) - 1)
     totalOctopuses = len(octopuses[0]) * len(octopuses)
@@ -124,7 +120,11 @@ def findSurroundingPoints(currPoint, maxIndex):
 
 
 if __name__ == "__main__":
+
+    with open('input.txt') as f:
+        lines = [line.rstrip() for line in f.readlines()]
+
     print("\n----- Part 1 -----\n")
-    part1()
+    part1(lines)
     print("\n----- Part 2 -----\n")
-    part2()
+    part2(lines)

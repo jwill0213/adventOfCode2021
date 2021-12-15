@@ -1,8 +1,4 @@
-def part1():
-    lines = []
-    with open('input.txt') as f:
-        lines = [line.rstrip() for line in f.readlines()]
-
+def part1(lines):
     gamma = ''
     epsilon = ''
 
@@ -27,11 +23,7 @@ def part1():
         f'Epislon: {epsilonRate}\nGamma: {gammaRate}\nPower Consumption: {epsilonRate * gammaRate}')
 
 
-def part2():
-    lines = []
-    with open('input.txt') as f:
-        lines = [line.rstrip() for line in f.readlines()]
-
+def part2(lines):
     oxygenRatingList = []
     co2ScrubberList = []
     onesList = []
@@ -89,7 +81,10 @@ def part2():
 
 
 if __name__ == "__main__":
+    with open('input.txt') as f:
+        lines = [line.rstrip() for line in f.readlines()]
+
     print("\n----- Part 1 -----\n")
-    part1()
+    part1(lines)
     print("\n----- Part 2 -----\n")
-    part2()
+    part2(lines)

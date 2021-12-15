@@ -6,16 +6,13 @@ CHUNK_PAIRS = {
 }
 
 
-def part1():
+def part1(lines):
     score_map = {
         ')': 3,
         ']': 57,
         '}': 1197,
         '>': 25137
     }
-
-    with open('input.txt') as f:
-        lines = [line.rstrip() for line in f.readlines()]
 
     score = 0
     currentChunk = []
@@ -34,16 +31,13 @@ def part1():
     print(f"Syntax Error Score {score}")
 
 
-def part2():
+def part2(lines):
     score_map = {
         ')': 1,
         ']': 2,
         '}': 3,
         '>': 4
     }
-
-    with open('input.txt') as f:
-        lines = [line.rstrip() for line in f.readlines()]
 
     lineScores = []
     for line in lines:
@@ -74,7 +68,11 @@ def part2():
 
 
 if __name__ == "__main__":
+
+    with open('input.txt') as f:
+        lines = [line.rstrip() for line in f.readlines()]
+
     print("\n----- Part 1 -----\n")
-    part1()
+    part1(lines)
     print("\n----- Part 2 -----\n")
-    part2()
+    part2(lines)

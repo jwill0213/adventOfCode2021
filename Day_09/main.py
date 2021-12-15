@@ -1,7 +1,4 @@
-def part1():
-    with open('input.txt') as f:
-        lines = [line.rstrip() for line in f.readlines()]
-
+def part1(lines):
     lowPoints = []
     maxIndexX = len(lines[0]) - 1
     maxIndexY = len(lines) - 1
@@ -24,9 +21,6 @@ def part1():
 
 
 def part2():
-    with open('input.txt') as f:
-        lines = [line.rstrip() for line in f.readlines()]
-
     lowPoints = []
     maxIndex = (len(lines[0]) - 1, len(lines) - 1)
     for y in range(len(lines)):
@@ -92,7 +86,11 @@ def findSurroundingPoints(currPoint, allPoints, maxIndex):
 
 
 if __name__ == "__main__":
+
+    with open('input.txt') as f:
+        lines = [line.rstrip() for line in f.readlines()]
+
     print("\n----- Part 1 -----\n")
-    part1()
+    part1(lines)
     print("\n----- Part 2 -----\n")
-    part2()
+    part2(lines)
