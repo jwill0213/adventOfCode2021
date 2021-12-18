@@ -68,7 +68,6 @@ def part2(lines):
 
 
 if __name__ == "__main__":
-
     with open('input.txt') as f:
         lines = [line.rstrip() for line in f.readlines()]
 
