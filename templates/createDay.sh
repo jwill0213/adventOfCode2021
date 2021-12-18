@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 DAY=$1
 TITLE=$2
@@ -11,9 +11,9 @@ fi
 
 mkdir ../Day_$DAY/
 
-cp -r main.py ../DAY_$DAY/main.py
+cp -r main.py ../Day_$DAY/main.py
 
 touch ../Day_$DAY/README.md
-touch ../DAY_$DAY/input.txt
+touch ../Day_$DAY/input.txt
 
 echo "# Advent Of Code 2021 Day $DAY: $TITLE\n\n## Part 1\nTBD\n\n---\n## Part 2\nTBD" > ../Day_$DAY/README.md
