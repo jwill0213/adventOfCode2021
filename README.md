@@ -26,9 +26,9 @@ There are my solutions for [Advent of Code 2021](https://adventofcode.com/2021/)
 
 [**Day 12**](Day_12/) - [AdventOfCode](https://adventofcode.com/2021/day/12)
 
-<!-- [**Day 13**](Day_13/) - [AdventOfCode](https://adventofcode.com/2021/day/13) -->
+[**Day 13**](Day_13/) - [AdventOfCode](https://adventofcode.com/2021/day/13)
 
-<!-- [**Day 14**](Day_14/) - [AdventOfCode](https://adventofcode.com/2021/day/14) -->
+[**Day 14**](Day_14/) - [AdventOfCode](https://adventofcode.com/2021/day/14)
 
 <!-- [**Day 15**](Day_15/) - [AdventOfCode](https://adventofcode.com/2021/day/15) -->
 
