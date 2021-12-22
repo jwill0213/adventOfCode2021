@@ -1,4 +1,4 @@
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 
 def part1(lines, numSteps):
@@ -20,14 +20,10 @@ def part1(lines, numSteps):
         # print("".join(newTemplate))
         template = newTemplate[:]
 
-    letterCount = defaultdict(int)
-    for l in template:
-        letterCount[l] += 1
+    counts = Counter(template).most_common()
 
-    sortedValues = sorted(letterCount.items(), key=lambda x: x[1])
-
-    mostCommon = sortedValues[-1]
-    leastCommon = sortedValues[0]
+    mostCommon = counts[0]
+    leastCommon = counts[-1]
 
     print(f"At step {step} the polymer is {len(template)} long. Most common character is {mostCommon} least common is {leastCommon} ")
     print(
@@ -63,7 +59,7 @@ def part2(lines, numSteps):
     mostCommon = sortedValues[-1]
     leastCommon = sortedValues[0]
 
-    print(f"At step {step} the polymer is {len(template)} long. Most common character is {mostCommon} least common is {leastCommon} ")
+    print(f"At step {step} the polymer is {sum(list(letterCount.values()))} long. Most common character is {mostCommon} least common is {leastCommon} ")
     print(
         f"Solution is {mostCommon[1]} - {leastCommon[1]} = {mostCommon[1] - leastCommon[1]}")
 
