@@ -30,7 +30,7 @@ There are my solutions for [Advent of Code 2021](https://adventofcode.com/2021/)
 
 [**Day 14**](Day_14/) - [AdventOfCode](https://adventofcode.com/2021/day/14)
 
-<!-- [**Day 15**](Day_15/) - [AdventOfCode](https://adventofcode.com/2021/day/15) -->
+[**Day 15**](Day_15/) - [AdventOfCode](https://adventofcode.com/2021/day/15)
 
 <!-- [**Day 16**](Day_16/) - [AdventOfCode](https://adventofcode.com/2021/day/16) -->
 
